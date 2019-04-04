@@ -1,0 +1,10 @@
+{
+  "name": "mkreadme",
+  "version": "0.1.0",
+  "bin": {
+    "mkreadme": "./cli.js"
+  },
+  "main": "index.js",
+  "homepage": "https://github.com/wayou/mkreadme",
+  "license": "MIT"
+}
