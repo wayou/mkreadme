@@ -5,9 +5,9 @@ const README_TEMPLATE_URL =
   "https://raw.githubusercontent.com/wayou/readme-template/master/README.md";
 
 /**
- *
- * @param {*} url
- * @param {*} cb
+ * download file
+ * @param {*} url url to download from
+ * @param {*} cb callback
  */
 function fetchFile(url, cb) {
   const file = fs.createWriteStream("README.md");
@@ -24,7 +24,7 @@ function fetchFile(url, cb) {
         file.close();
         return;
       }
-      
+
       response.pipe(file);
       file.on("finish", function() {
         file.close(cb);
