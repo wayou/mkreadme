@@ -24,7 +24,7 @@ You can optionally specify a sample file to download.
 Mostly you may combine this util with some other npx command to generate the essential files to startup a project from scratch, e.g.:
 
 ```sh
-$ npx license mit > LICENSE && npx mkreadme && npx gitignore node && npx covgen liuwayong@gmail.com && yarn init -y
+$ npx license mit > LICENSE && npx mkreadme && npx gitignore node && npx covgen <your_email> && yarn init -y
 ```
 
 ## License
